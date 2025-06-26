@@ -1,62 +1,52 @@
 body {
   margin: 0;
-  padding: 0;
-  background-image: url('WebsiteBackground.jpg');
+  font-family: sans-serif;
+  background: url('WebsiteBackground.jpg') no-repeat center top fixed;
   background-size: cover;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  font-family: 'Orbitron', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 30px;
+  background: black;
+  padding: 30px 0;
   text-align: center;
 }
 
-header h1 {
+.title {
+  font-family: 'Haruto', sans-serif;
   font-size: 3.5rem;
-  color: #ff3cac;
-  text-shadow: 0 0 15px #ff3cac;
+  color: #ff4dd2;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
-.product-gallery {
+.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
-  padding: 60px 40px;
+  gap: 40px;
+  padding: 60px 20px;
 }
 
-.product {
-  width: 280px;
-  height: 280px;
+.products img {
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 25px #ff3cac;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: floaty 4s ease-in-out infinite, pulse 2s infinite;
+  border-radius: 10px;
+  border: 5px solid #ff4dd2;
+  box-shadow: 0 0 30px #ff4dd2;
+  transition: transform 0.3s ease;
 }
 
-.product:hover {
-  transform: scale(1.12);
-  box-shadow: 0 0 55px #ff3cac;
-}
-
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 25px #ff3cac; }
-  50% { box-shadow: 0 0 55px #ff3cac; }
+.products img:hover {
+  transform: scale(1.05);
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 20px;
+  background: #1a1a1a;
   text-align: center;
+  padding: 20px;
+  color: #ccc;
   font-size: 0.9rem;
 }
