@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sutekkā Town - Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header>
+    <h1><a href="index.html">Sutekkā Town</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Cart</h2>
+      <p>Review your items below.</p>
+    </section>
+
+    <section class="cart-items" id="cartItems">
+      <!-- Items will be dynamically inserted here -->
+    </section>
+
+    <section class="cart-total">
+      <h3>Total: $<span id="cartTotal">0.00</span></h3>
+      <a href="checkout.html" class="btn">Go to Checkout</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sutekkā Town. All rights reserved.</p>
+  </footer>
+</body>
+</html>
