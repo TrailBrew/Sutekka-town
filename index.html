@@ -2,32 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sutekkā Town</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <style>
     @font-face {
       font-family: 'Haruto';
-      src: url('fonts/HarutoPersonalUse-gwM5R.ttf') format('truetype');
+      src: url('haruto-font.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-image: url('WebsiteBackground.jpg');
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Haruto', sans-serif;
+      font-size: 3rem;
+      color: #ff4fbc;
+      text-shadow: 0 0 12px #ff4fbc;
+      margin: 0;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px 10px #ff4fbc;
+      overflow: hidden;
+    }
+
+    .product img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 class="title">Sutekkā Town</h1>
+    <h1>Sutekkā Town</h1>
   </header>
 
-  <main>
-    <div class="products">
-      <a href="product1.html"><img src="Animestore1.png" alt="Product 1"></a>
-      <a href="product2.html"><img src="Animestore2.png" alt="Product 2"></a>
-      <a href="product3.html"><img src="Animestore3.png" alt="Product 3"></a>
-      <a href="product4.html"><img src="Animestore4.png" alt="Product 4"></a>
-    </div>
-  </main>
+  <section class="products">
+    <div class="product"><img src="product1.jpg" alt="Product 1" /></div>
+    <div class="product"><img src="product2.jpg" alt="Product 2" /></div>
+    <div class="product"><img src="product3.jpg" alt="Product 3" /></div>
+    <div class="product"><img src="product4.jpg" alt="Product 4" /></div>
+  </section>
 
   <footer>
-    <p>© 2025 Sutekkā Town. All rights reserved.</p>
+    © 2025 Sutekkā Town. All rights reserved.
   </footer>
 </body>
 </html>
