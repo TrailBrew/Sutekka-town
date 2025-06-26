@@ -4,92 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sutekkā Town</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('WebsiteBackground.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Orbitron', sans-serif;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    header {
-      background-color: #000;
-      padding: 30px 0;
-      text-align: center;
-      font-size: 2.5rem;
-      color: #ff4da6;
-      letter-spacing: 3px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
-    }
-
-    .sticker-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 100px;
-      padding: 100px 20px;
-      position: relative;
-    }
-
-    .sticker {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      overflow: hidden;
-      position: absolute;
-      transition: transform 0.3s ease;
-      animation: float 6s ease-in-out infinite;
-      box-shadow: 0 0 20px 8px #ff4da6;
-      border: 4px solid #ff4da6;
-    }
-
-    .sticker:hover {
-      transform: scale(1.2);
-      box-shadow: 0 0 30px 12px #ff4da6;
-      z-index: 2;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
-    }
-
-    .sticker:nth-child(1) { top: 5%; left: 10%; }
-    .sticker:nth-child(2) { top: 20%; right: 15%; }
-    .sticker:nth-child(3) { bottom: 20%; left: 25%; }
-    .sticker:nth-child(4) { bottom: 10%; right: 25%; }
-
-    footer {
-      background-color: #111;
-      padding: 25px 0;
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>Sutekkā Town</header>
+  <header>
+    <h1>Sutekkā Town</h1>
+  </header>
 
-  <div class="sticker-container">
-    <a href="product1.html" class="sticker"><img src="Animestore1.png" alt="Sticker 1" width="100%" height="100%"></a>
-    <a href="product2.html" class="sticker"><img src="Animestore2.png" alt="Sticker 2" width="100%" height="100%"></a>
-    <a href="product3.html" class="sticker"><img src="Animestore3.png" alt="Sticker 3" width="100%" height="100%"></a>
-    <a href="product4.html" class="sticker"><img src="Animestore4.png" alt="Sticker 4" width="100%" height="100%"></a>
-  </div>
+  <main class="sticker-gallery">
+    <a href="product1.html"><img src="Animestore1.png" alt="Sticker 1" class="sticker"></a>
+    <a href="product2.html"><img src="Animestore2.png" alt="Sticker 2" class="sticker"></a>
+    <a href="product3.html"><img src="Animestore3.png" alt="Sticker 3" class="sticker"></a>
+    <a href="product4.html"><img src="Animestore4.png" alt="Sticker 4" class="sticker"></a>
+  </main>
 
   <footer>
-    © 2025 Sutekkā Town. All rights reserved.
+    <p>© 2025 Sutekkā Town. All rights reserved.</p>
   </footer>
 </body>
 </html>
