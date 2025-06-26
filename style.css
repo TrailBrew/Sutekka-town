@@ -129,3 +129,14 @@ footer {
   background-color: #e04396;
 }
 
+/* Page transition fade */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+
