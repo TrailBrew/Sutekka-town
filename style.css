@@ -1,68 +1,66 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-image: url('FinalWebsiteBackground-Full.jpg');
-  background-repeat: repeat-y;
+  background-image: url('WebsiteBackground.jpg');
   background-size: cover;
+  background-repeat: repeat-y;
   background-attachment: fixed;
+  font-family: 'Orbitron', sans-serif;
   color: white;
-  overflow-x: hidden;
 }
 
 header {
-  background-color: black;
-  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
   text-align: center;
 }
 
-h1 {
+header h1 {
   font-size: 3rem;
-  margin: 0;
-  color: #ffffff;
-  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  color: #ff3cac;
+  text-shadow: 0 0 10px #ff3cac;
 }
 
-.sticker-gallery {
+.product-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 60px 10px;
-  gap: 50px;
+  padding: 50px 20px;
+  gap: 60px;
 }
 
-.sticker {
-  width: 250px;
-  height: 250px;
-  border-radius: 0;
-  box-shadow: 0 0 30px 10px #ff00ff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: float 3s ease-in-out infinite, pulse 2s infinite;
+.product {
+  width: 220px;
+  height: 220px;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ff3cac;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: floaty 4s ease-in-out infinite, pulse 2s infinite;
 }
 
-.sticker:hover {
-  transform: scale(1.15);
-  box-shadow: 0 0 40px 20px #ff00ff;
-  z-index: 10;
+.product:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #ff3cac;
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0px); }
+@keyframes floaty {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 30px 10px #ff00ff; }
-  50% { box-shadow: 0 0 40px 15px #ff33cc; }
-  100% { box-shadow: 0 0 30px 10px #ff00ff; }
+  0%, 100% {
+    box-shadow: 0 0 30px #ff3cac;
+  }
+  50% {
+    box-shadow: 0 0 60px #ff3cac;
+  }
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
   font-size: 0.9rem;
 }
