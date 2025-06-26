@@ -32,8 +32,8 @@ h1 {
 }
 
 .product img {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
   border: 4px solid #ff33cc;
