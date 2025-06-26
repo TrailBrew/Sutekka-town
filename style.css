@@ -1,14 +1,21 @@
-/* Google Fonts Setup */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Noto+Sans+JP&display=swap');
+
+/* Page Fade Transitions */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', sans-serif;
-  background-image: url('https://i.ibb.co/tBJztmC/manga-bg.jpg');
+  background: url('WebsiteBackground1Manga') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   color: white;
   position: relative;
-  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
 }
 
 .background-overlay {
@@ -17,7 +24,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 15, 20, 0.8);
+  background-color: rgba(15, 15, 20, 0.75);
   z-index: -1;
 }
 
@@ -91,52 +98,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 40px;
-}
-
-.product {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  text-align: center;
-  padding: 20px;
-  color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-}
-
-.product img {
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.product button {
-  background-color: #ff4da6;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin-top: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-  background-color: #e04396;
-}
-
-/* Page transition fade */
-body {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-body.fade-in {
-  opacity: 1;
-}
-
-
