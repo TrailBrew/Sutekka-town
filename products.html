@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sutekkā Town - Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header>
+    <h1><a href="index.html">Sutekkā Town</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Browse Our Stickers</h2>
+      <p>Click to add them to your cart and start your collection.</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product">
+        <img src="https://i.ibb.co/PrD5LzD/anime1.jpg" alt="Sticker 1">
+        <h3>Sakura Girl</h3>
+        <p>$1.99</p>
+        <button onclick="addToCart('Sakura Girl', 1.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/NYkMgz0/anime2.jpg" alt="Sticker 2">
+        <h3>Cyber Ninja</h3>
+        <p>$2.49</p>
+        <button onclick="addToCart('Cyber Ninja', 2.49)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/yX5fGqH/anime3.jpg" alt="Sticker 3">
+        <h3>Kawaii Ghost</h3>
+        <p>$1.49</p>
+        <button onclick="addToCart('Kawaii Ghost', 1.49)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sutekkā Town. All rights reserved.</p>
+  </footer>
+</body>
+</html>
