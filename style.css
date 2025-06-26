@@ -10,56 +10,52 @@ body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 30px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ff3cac;
-  text-shadow: 0 0 10px #ff3cac;
+  text-shadow: 0 0 15px #ff3cac;
 }
 
 .product-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 20px;
-  gap: 60px;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 40px;
 }
 
 .product {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 30px #ff3cac;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #ff3cac;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: floaty 4s ease-in-out infinite, pulse 2s infinite;
 }
 
 .product:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 50px #ff3cac;
+  transform: scale(1.12);
+  box-shadow: 0 0 55px #ff3cac;
 }
 
 @keyframes floaty {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 30px #ff3cac;
-  }
-  50% {
-    box-shadow: 0 0 60px #ff3cac;
-  }
+  0%, 100% { box-shadow: 0 0 25px #ff3cac; }
+  50% { box-shadow: 0 0 55px #ff3cac; }
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
